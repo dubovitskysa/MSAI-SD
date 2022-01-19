@@ -1,5 +1,7 @@
 
 
+
+
 # Section 6. Project part
 # list  of available  goods  [goodName quantity, price]
 vending_machine = {
