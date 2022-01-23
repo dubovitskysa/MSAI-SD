@@ -12,8 +12,8 @@ def factorial_rec(x):
 print(factorial_rec(30))
 
 # 1.2 - Calculate 3000! Solve the problem you face without rewriting
-sys.setrecursionlimit(350)
-print('300!', factorial_rec(300))
+sys.setrecursionlimit(10000)
+print('3000!', factorial_rec(3000))
 
 
 # 1.3 What about 30000! calculation? Provide a non-recursive function
@@ -65,8 +65,8 @@ print(array)
 
 # 5.2 - Solve it in functional style: one-string
 # solution (excluding input reading) *
-array2 = [[(i_rows + 1) * (i_cols + 1) for i_cols in range(cols)] for i_rows
-          in range(rows)]
+array2 = (lambda rows, cols :   [[(i_rows + 1) * (i_cols + 1) for i_cols in range(cols)] for i_rows
+          in range(rows)])(4,6)
 print(array2)
 
 
