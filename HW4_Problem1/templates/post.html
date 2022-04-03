@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post page</title>
+</head>
+<body>
+        <table width="500" align="center">
+            <tr>
+                <td>
+                    <h1>Post details (read-only)</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="postheader" id="postheader" placeholder="{{post.header}}" readonly />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="postbody" id="postbody" readonly />{{post.body}}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Created on: {{post.timestamp}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/newPost">Add new post</a>
+                    <br/>
+                    <a href="/">Main Page</a>
+                    <br/>
+                </td>
+        </table>
+</body>
+</html>
