@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New post</title>
+</head>
+<body>
+    <form action="/savePost" method="post">
+        <table width="500" align="center">
+            <tr>
+                <td>
+                    <h1>Add your post</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Headline: <input type="text" name="postheader" id="postheader" placeholder="Post header goes here" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Text: <textarea name="postbody" id="postbody" placeholder=""/></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Add</button>
+                </td>
+            </tr>
+    </form>
+</body>
+</html>
